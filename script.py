@@ -6,9 +6,14 @@ and finally add the course data on the collection(s).
 
 import pymongo
 import json
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
+URI = os.getenv('URI')
 
 # Connect to MongoDB
-client = pymongo.MongoClient("mongodb://localhost:27017/")
+client = pymongo.MongoClient(URI)
 db = client["courses"]
 collection = db["courses"]
 
@@ -21,12 +26,16 @@ collection.create_index("name")
 
 # add rating field to each course
 for course in courses:
-    course["ration"] = {"total": 0, "count": 0}
-
-# add rating field to each chapter
+    course['rating'] = {'total': 0, 'count': 0}
+    
+# add rating filed to each chapter
 for course in courses:
-    for chapter in course["chapters"]:
-        collection.insert_one(course)
+    for chapter in course['chapters']:
+        chapter['rating'] = {'total': 0, 'count': 0}
+
+# Add courses to collection
+for course in courses:
+    collection.insert_one(course)
 
 # Close MongoDB connection
 client.close()

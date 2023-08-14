@@ -82,3 +82,17 @@ def test_get_course_by_id_not_exists():
     response = client.get("/courses/6431137ab5da949e5978a280")
     assert response.status_code == 404
     assert response.json() == {'detail': 'Course not found'}
+
+# Test the Get Course Chapter Info Endpoint
+def test_get_chapter_info():
+    response = client.get("/courses/6431137ab5da949e5978a281/1")
+    assert response.status_code == 200
+    chapter = response.json()
+    assert chapter['name'] == 'Big Picture of Calculus'
+    assert chapter['text'] == 'Highlights of Calculus'
+    
+    
+def test_get_chapter_info_not_exists():
+    response = client.get("/courses/6431137ab5da949e5978a281/990")
+    assert response.status_code == 404
+    assert response.json() == {'detail': 'Chapter not found'}

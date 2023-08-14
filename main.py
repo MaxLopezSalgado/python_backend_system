@@ -90,3 +90,5 @@ def rate_chapter(course_id: str, chapter_id: str, rating: int = Query(..., gt=-2
         chapter['rating'] = {'total': rating, 'count': 1}
     db.courses.update_one({'_id': ObjectId(course_id)}, {'$set': {'chapters': chapters}})
     return chapter 
+
+

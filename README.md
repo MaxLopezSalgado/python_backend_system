@@ -5,8 +5,7 @@
  pymongo 
  bson 
  os
- dotenv 
- pymongo 
+ dotenv  
  bson 
  pytest
 ```
@@ -14,7 +13,7 @@
 ## Endpoints
 
 ### Adding the courses.json to MongoDB using the Python script
-![Image](https://github.com/MaxLopezSalgado/python_backend_system/blob/main/assets/100579900/3fae4805-9e0e-4d30-a3ba-e8b3ad761558.png)
+!(https://github.com/MaxLopezSalgado/python_backend_system/blob/main/assets/100579900/3fae4805-9e0e-4d30-a3ba-e8b3ad761558.png)
 
 ### Courses Endpoint
 The course's rating is calculated as an aggregated sum of its chapters, following the assignment document's guidelines.

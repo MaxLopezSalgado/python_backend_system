@@ -13,7 +13,7 @@
 ## Endpoints
 
 ### Adding the courses.json to MongoDB using the Python script
-!(https://github.com/MaxLopezSalgado/python_backend_system/blob/main/assets/100579900/3fae4805-9e0e-4d30-a3ba-e8b3ad761558.png)
+![ss6](https://github.com/MaxLopezSalgado/python_backend_system/blob/main/assets/100579900/3fae4805-9e0e-4d30-a3ba-e8b3ad761558.png)
 
 ### Courses Endpoint
 The course's rating is calculated as an aggregated sum of its chapters, following the assignment document's guidelines.

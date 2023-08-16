@@ -1,11 +1,14 @@
-## Running Tests
+## Libraries used
 ```py
-pytest
-```
-
-# Adding the Collection to MongoDB
-```py
-python script.py
+contextlib
+ fastapi 
+ pymongo 
+ bson 
+ os
+ dotenv 
+ pymongo 
+ bson 
+ pytest
 ```
 
 ## Screenshots with Endpoints

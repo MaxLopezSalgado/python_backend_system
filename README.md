@@ -13,28 +13,30 @@
 ## Endpoints
 
 ### Adding the courses.json to MongoDB using the Python script
-![ss6][image](https://github.com/MaxLopezSalgado/python_backend_system/blob/main/assets/100579900/3fae4805-9e0e-4d30-a3ba-e8b3ad761558.png)
+![image](https://github.com/MaxLopezSalgado/python_backend_system/assets/100579900/e3bd8223-6cba-475f-9a0a-7fafd60c5096)
 
 ### Courses Endpoint
 The course's rating is calculated as an aggregated sum of its chapters, following the assignment document's guidelines.
-(![Image](https://github.com/MaxLopezSalgado/python_backend_system/blob/main/assets/100579900/0417a618-50b3-4267-bbd3-d5bcbff0ab51.png))
+![image](https://github.com/MaxLopezSalgado/python_backend_system/assets/100579900/945cfb4e-c27a-40a1-b757-3ce1fd49e1a9)
 
 ### Single Course Overview Endpoint
-(![Image](https://github.com/MaxLopezSalgado/python_backend_system/blob/main/assets/100579900/02035010-7e92-4879-b7a1-8d6ff3acfa5a.png))
+![image](https://github.com/MaxLopezSalgado/python_backend_system/assets/100579900/8723831d-e8c8-49bf-b07c-41f94d800d6f)
 
 ### Chapter Details Endpoint
-(![Image](https://github.com/MaxLopezSalgado/python_backend_system/blob/main/assets/100579900/70112662-c495-4ba1-bfbc-db045bc51ad2.png))
+![image](https://github.com/MaxLopezSalgado/python_backend_system/assets/100579900/fcfdb476-7404-40c3-8d82-f4f8a6a384a7)
 
 ### POST Request Endpoint to Add Rating to a Chapter
-(![Image](https://github.com/MaxLopezSalgado/python_backend_system/blob/main/assets/100579900/ca2de8da-7bda-411a-9078-6063c4b341ba.png))
+![image](https://github.com/MaxLopezSalgado/python_backend_system/assets/100579900/e508d452-78f9-478f-973c-dd45d58a5fb3)
 
 ### Success
-(![Image](https://github.com/MaxLopezSalgado/python_backend_system/blob/main/assets/100579900/91bb0046-b0c0-438d-9eb9-a60260f0c60f.png))
+![image](https://github.com/MaxLopezSalgado/python_backend_system/assets/100579900/a9e3af80-b33c-45a5-bcac-96ba2635e1a0)
+
 
 ### Running Tests to Validate All Endpoints
 To run tests: `pytest test_app.py`
-(![Image](https://github.com/MaxLopezSalgado/python_backend_system/blob/main/assets/100579900/a6434277-9205-4370-8bb1-4838050ad56f.png))
+![image](https://github.com/MaxLopezSalgado/python_backend_system/assets/100579900/430ba6f4-2402-4d65-9022-1061d18a3721)
 
 ### Containerizing the Application 
 To containerize: `docker build -t my_python_app .`
-(![Image](https://github.com/MaxLopezSalgado/python_backend_system/blob/main/assets/100579900/ae7198d0-809a-4ebd-ac3a-ed2c954f9df9.png))
+![image](https://github.com/MaxLopezSalgado/python_backend_system/assets/100579900/f56cc46d-61b5-4955-99c0-6541f0d9b445)
+
